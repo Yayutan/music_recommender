@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Recommendation</title>
+    <div>
+        <h2 id="title">Get music recommendations from our machine learning algorithm!</h2>
+    </div>
+</head>
+
+<body>
+    <form action="/results" method="post">
+        <fieldset>
+            <legend>First, tell us some music genres you are interested in.</legend>
+                <div>
+                    <input type="checkbox" id="electronic" name="electronic" value=15>
+                    <label for="coding">Electronic</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="rock" name="rock" value=12>
+                    <label for="music">Rock</label>
+                </div>
+                <div>
+                     <input type="checkbox" id="instrumental" name="rock" value=1235>
+                    <label for="art">Instrumental</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="pop" name="pop" value=10>
+                    <label for="sports">Pop</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="experimental" name="experimental" value=38>
+                    <label for="cooking">Experimental</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="folk" name="folk" value=17>
+                    <label for="sports">Folk</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="hiphop" name="hiphop" value=21>
+                    <label for="cooking">Hip-hop</label>
+                </div>
+                <div>
+                    <button type="submit" name="submit_btn" value="genre_btn">Submit form</button>
+                </div>
+        </fieldset>
+    </form>
+    <footer class="footer">
+        <p>&copy; Ming-Hsuan Chuang 2021</p>
+    </footer>
+
+</body>
+
+</html>
