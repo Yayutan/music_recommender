@@ -24,13 +24,13 @@ def genre_result(track_data, genre_list):
     track_genre = [extract_genre_list(track_data[i].genres_all) for i in range(len(track_data))]
     sim_list = []
     for i in track_genre:
-        sim_list.append(len(list(set(track_data) & set(genre_list))))
+        sim_list.append(len(list(set(i) & set(genre_list))))
     max_index = sorted(range(len(sim_list)), key=lambda j: sim_list[j])[-3:]
     return [track_data[i].track_id for i in max_index]
 
 
 def music_result():
-    return [2]
+    return [2, 2, 2]
 
 
 def get_music_path(music_id):
