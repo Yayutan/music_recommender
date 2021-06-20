@@ -1,1 +1,0 @@
-SQLALCHEMY_DATABASE_URI = "postgresql://mchuang:0000@localhost:5432/music_recommendation"
