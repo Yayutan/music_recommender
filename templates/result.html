@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Recommendation</title>
+</head>
+<body>
+    <div>
+        <div>
+            <p>Let's take a look at some music you might like: </p>
+        </div>
+        <div>
+            <audio controls id="rec1">
+                <p>Music 1: </p>
+                <source src="{{url_for('static', filename= music_path[0])}}" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div>
+            <audio controls id="rec2">
+                <p>Music 2: </p>
+                <source src="{{url_for('static', filename= music_path[1] )}}" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div>
+            <audio controls id="rec3">
+                <p>Music 3: </p>
+                <source src="{{url_for('static', filename= music_path[2] )}}" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+    <div>
+        <form action="/results" method="post">
+        <fieldset>
+            <legend>Do you like the music we recommend to you?</legend>
+                <div>
+                    <input type="checkbox" id="rec" name="interest" value=1>
+                    <label for="coding">Music 1</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="rec2" name="interest" value=2>
+                    <label for="music">Music 2</label>
+                </div>
+                <div>
+                     <input type="checkbox" id="rec3" name="interest" value=3>
+                    <label for="art">Music 3</label>
+                </div>
+                <div>
+                    <button type="submit" name="submit_btn" value="music_btn">Submit form</button>
+                </div>
+        </fieldset>
+    </form>
+    </div>
+</body>
+</html>
